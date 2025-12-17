@@ -26,12 +26,13 @@ const Navbar = () => {
         isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : ""
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+
         <a
           href="#"
           className="text-xl font-display font-bold text-primary glow-text"
         >
-          {"<DEV/>"}
+          {"<BIA.TECH/>"}
         </a>
 
         {/* Desktop nav */}
@@ -47,7 +48,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        {/* Mobile menu button */}
+        {/* Botão de menu mobile */}
         <button
           className="md:hidden text-foreground"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -56,7 +57,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Menu mobile */}
       {isMenuOpen && (
         <div className="md:hidden bg-card/95 backdrop-blur-lg border-b border-border">
           <div className="px-4 py-4 flex flex-col gap-4">
