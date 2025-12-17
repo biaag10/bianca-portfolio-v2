@@ -18,8 +18,8 @@ const ProjectCard = ({
   liveUrl,
 }: ProjectCardProps) => {
   return (
-    <div className="glass-card rounded-lg overflow-hidden group hover:animate-pulse-glow transition-all duration-500">
-      {/* Project image placeholder */}
+    <div className="glass-card rounded-lg overflow-hidden group hover:animate-pulse-glow transition-all duration-500 flex flex-col h-full">
+      {/* Imagem do projeto ou placeholder */}
       <div className="h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center relative overflow-hidden">
         {image ? (
           <img src={image} alt={title} className="w-full h-full object-cover" />
