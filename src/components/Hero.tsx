@@ -9,14 +9,15 @@ const Hero = () => {
     <section className="min-h-screen flex flex-col items-center justify-center px-4 relative">
       <div className="text-center animate-slide-up">
         <p className="text-primary font-body text-lg tracking-widest mb-4">
-          DESENVOLVEDOR FULL STACK
+          DESENVOLVEDORA FULL STACK & ANALISTA DE DADOS
         </p>
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 glow-text text-foreground">
-          SEU NOME
+          Bianca A. Galvão
         </h1>
         <p className="text-muted-foreground font-body text-lg md:text-xl max-w-2xl mx-auto mb-12">
-          Transformando ideias em código. Construindo o futuro digital, uma
-          linha por vez.
+          Transformando ideias em código e sonhos em realidade. 
+          <br />
+          Construindo o futuro digital, uma linha por vez.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
