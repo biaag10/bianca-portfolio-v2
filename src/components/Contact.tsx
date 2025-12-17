@@ -35,7 +35,7 @@ const Contact = () => {
         </div>
 
         <a
-          href="mailto:seu@email.com"
+          href="mailto:biancandradegalvao@outlook.com"
           className="inline-block px-10 py-4 bg-gradient-to-r from-primary to-accent text-primary-foreground font-display font-bold rounded-lg hover:opacity-90 transition-opacity"
         >
           ENVIAR MENSAGEM
