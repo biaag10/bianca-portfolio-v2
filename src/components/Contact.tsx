@@ -1,11 +1,12 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Contact = () => {
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "mailto:seu@email.com", label: "Email" },
+    { icon: Github, href: "https://github.com/biaag10", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/bianca-andrade-galvão/", label: "LinkedIn" },
+    { icon: FaWhatsapp, href: "https://wa.me/5571996898570", label: "WhatsApp" },
+    { icon: Mail, href: "mailto:biancandradegalvao@outlook.com", label: "Email" },
   ];
 
   return (
@@ -15,8 +16,9 @@ const Contact = () => {
           VAMOS CONECTAR
         </h2>
         <p className="text-muted-foreground font-body mb-12 max-w-xl mx-auto">
-          Interessado em trabalhar junto? Tem um projeto em mente? Vamos
-          conversar sobre como posso ajudar.
+          Interessado em trabalhar junto? Tem um projeto em mente? 
+          <br />
+          Vamos conversar sobre como posso te ajudar.
         </p>
 
         <div className="flex justify-center gap-6 mb-12">
