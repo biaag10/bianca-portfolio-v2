@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/bianca-portfolio-v2/",
+  base: mode === "production" ? "/bianca-portfolio-v2/" : "/",
   server: {
     host: "::",
     port: 8080,
