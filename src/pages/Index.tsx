@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
+import StarField from "@/components/StarField";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
@@ -10,6 +11,7 @@ const Index = () => {
 
   return (
     <>
+        <StarField />
         <Navbar />
         <main className="relative z-10">
           <Hero />
