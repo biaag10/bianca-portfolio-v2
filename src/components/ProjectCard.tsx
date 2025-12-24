@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, AlertTriangle } from "lucide-react";
 
 interface ProjectCardProps {
   title: string;
@@ -6,7 +6,10 @@ interface ProjectCardProps {
   tags: string[];
   image?: string;
   githubUrl?: string;
+  githubUrlFront?: string;
+  githubUrlBack?: string;
   liveUrl?: string;
+  confidential?: boolean;
 }
 
 const ProjectCard = ({
@@ -15,7 +18,10 @@ const ProjectCard = ({
   tags,
   image,
   githubUrl,
+  githubUrlFront,
+  githubUrlBack,
   liveUrl,
+  confidential,
 }: ProjectCardProps) => {
   return (
     <div className="glass-card rounded-lg overflow-hidden group hover:animate-pulse-glow transition-all duration-500 flex flex-col h-full">
@@ -53,29 +59,61 @@ const ProjectCard = ({
 
         {/* Links */}
         <div className="flex gap-4">
-          {githubUrl && (
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-body"
-            >
-              <Github size={16} />
-              Código
-            </a>
-          )}
-          {liveUrl && (
-            <a
-              href={liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors text-sm font-body"
-            >
-              <ExternalLink size={16} />
-              Demo
-            </a>
+          {confidential ? (
+            <div className="flex items-center gap-2 text-amber-400 text-sm font-body">
+              <AlertTriangle size={16} />
+              Projeto confidencial
+            </div>
+          ) : (
+            <>
+            {githubUrl && (
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-body"
+                >
+                  <Github size={16} />
+                  Código
+                </a>
+              )}
+              {githubUrlFront && (
+                <a
+                  href={githubUrlFront}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-body"
+                >
+                  <Github size={16} />
+                  Front-end
+                </a>
+              )}
+              {githubUrlBack && (
+                <a
+                  href={githubUrlBack}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm font-body"
+                >
+                  <Github size={16} />
+                  Back-end
+                </a>
+              )}
+              {liveUrl && (
+                <a
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-muted-foreground hover:text-accent transition-colors text-sm font-body"
+                >
+                  <ExternalLink size={16} />
+                  Demo
+                </a>
+              )}
+            </>
           )}
         </div>
+
       </div>
     </div>
   );
