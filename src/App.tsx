@@ -8,17 +8,12 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const basename =
-  import.meta.env.MODE === "production"
-    ? "/bianca-portfolio-v2/"
-    : "/";
-
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={basename}>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
