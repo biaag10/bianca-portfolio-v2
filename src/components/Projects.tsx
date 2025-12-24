@@ -2,9 +2,10 @@ import ProjectCard from "./ProjectCard";
 
 const projectsData = [
   {
-    title: "E-commerce Platform",
-    description: "Plataforma completa de e-commerce com carrinho de compras, pagamentos integrados e painel administrativo.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    title: "BICINIC",
+    description: "Solução tecnológica para acompanhamento de pacientes, transformando dados médicos em visualizações claras através de gráficos.",
+    tags: ["React.js", "TypeScript", "Tailwind CSS", "Excel API", "Vite"],
+    image: `${import.meta.env.BASE_URL}projects/biclinic.png`,
     githubUrl: "#",
     liveUrl: "#",
   },
