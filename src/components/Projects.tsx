@@ -20,7 +20,8 @@ const projectsData = [
   {
     title: "Workout Tracker",
     description: "Aplicativo de banco digital com funcionalidades de transferência, pagamentos e gestão financeira.",
-    tags: ["React Native", "Firebase", "Redux"],
+    tags: ["Next.js", "Firebase", "Redux"],
+    image: `${import.meta.env.BASE_URL}projects/workout-tracker.png`,
     githubUrlFront: "https://github.com/biaag10/frontend-workout-tracker",
     githubUrlBack: "https://github.com/biaag10/backend-express-mongodb",
     liveUrl: "https://frontend-workout-tracker.vercel.app",
