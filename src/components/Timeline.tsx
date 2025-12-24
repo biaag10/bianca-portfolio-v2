@@ -7,28 +7,40 @@ interface TimelineItem {
 
 const timelineData: TimelineItem[] = [
   {
-    year: "2024",
-    title: "Senior Developer",
-    company: "Tech Company",
-    description: "Liderança técnica em projetos de alta complexidade com React e Node.js.",
+    year: "2025.2 - Atualmente",
+    title: "Estágio",
+    company: "SENAI CIMATEC",
+    description: "Atuação na automação e aprimoramento dos processos de desenvolvimento, teste e deploy de software. Suporte na implementação e manutenção de pipelines de CI/CD. Pesquisa e teste de novas tecnologias e ferramentas para melhorar os processos de desenvolvimento e operação. Documentação de configurações, procedimentos e boas práticas.",
   },
   {
-    year: "2022",
-    title: "Full Stack Developer",
-    company: "Startup XYZ",
-    description: "Desenvolvimento de aplicações web escaláveis e APIs robustas.",
+    year: "2024.2 - 2025.1",
+    title: "Estágio",
+    company: "NG7 Consultoria",
+    description: "Atuação no desenvolvimento de um sistema de agendamento full stack com API do Google Calendar. Acompanhamento de todo o ciclo: desde a prototipação, desenvolvimento, testes e validação até o deploy.",
   },
   {
-    year: "2020",
-    title: "Front-end Developer",
-    company: "Agency Digital",
-    description: "Criação de interfaces modernas e responsivas com foco em UX.",
+    year: "2023.2 - 2024.2",
+    title: "Iniciação Científica",
+    company: "CNPq",
+    description: "Desenvolvimento de um modelo computacional de uma usina híbrida de geração de energia elétrica, composta por uma fonte solar e eólica com um sistema de armazenamento de energia.",
   },
   {
-    year: "2018",
-    title: "Junior Developer",
-    company: "Software House",
-    description: "Início da jornada profissional, aprendizado intensivo em desenvolvimento web.",
+    year: "2022.2 - 2023.2",
+    title: "Iniciação Científica",
+    company: "FAPESB",
+    description: "Desenvolvimento de um modelo computacional de uma planta híbrida de geração de energia elétrica, composta por uma fonte solar e eólica",
+  },
+  {
+    year: "2022.2 - 2025.2",
+    title: "Empresa Júnior",
+    company: "CIMATEC Jr.",
+    description: "Projetista, Coordenadora de Projeto e Gerente do Núcleo de Computação.",
+  },
+  {
+    year: "2022.1 - Atualmente",
+    title: "Engenharia de Computação",
+    company: "SENAI CIMATEC",
+    description: "Início da da graduação em Engenharia de Computação.",
   },
 ];
 

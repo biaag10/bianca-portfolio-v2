@@ -38,7 +38,6 @@ const Hero = () => {
 
       {/* Indicador de rolagem (scroll) */}
       <div className="absolute bottom-8 left-[48.7%] animate-float">
-
         <ChevronDown className="text-primary/50" size={32} />
       </div>
 
